@@ -21,7 +21,7 @@ ll a[27];
 
 void func(int i, ll x){
 	if(i==n){
-		if(x!=s)ans = min(ans, abs((s-x)-x));
+		ans = min(ans, abs((s-x)-x));
 		return;
 	}
 	func(i+1, x+a[i]);
